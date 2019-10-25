@@ -1,18 +1,18 @@
 EESchema Schematic File Version 4
-LIBS:001-cache
+LIBS:Cerebro-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Date "2019-10-25"
+Rev "0.1"
+Comp "Electronic Cats"
+Comment1 "Un diseño para Moon Makers"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Andres Sabas"
 $EndDescr
 $Comp
 L power:PWR_FLAG #FLG01
@@ -76,7 +76,7 @@ $EndComp
 Wire Wire Line
 	10750 1250 10750 1125
 $Comp
-L wickerlib:VIN #PWR01
+L Cerebro-rescue:VIN-wickerlib #PWR01
 U 1 1 5DA054F6
 P 10750 1125
 F 0 "#PWR01" H 10750 975 50  0001 C CNN
@@ -87,7 +87,7 @@ F 3 "" H 10750 1125 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 001-rescue:PCB-Reverse_mount_leds U1
+L Cerebro-rescue:PCB-Reverse_mount_leds-001-rescue U1
 U 1 1 5DA40039
 P 9900 2050
 F 0 "U1" H 9999 2096 50  0000 L CNN
@@ -102,14 +102,14 @@ Flags
 Text Notes 9725 1825 0    89   ~ 18
 PCB Art & Logos
 $Comp
-L MCU_Microchip_SAMD:ATSAMD21G18A-AUT U6
-U 1 1 5DB054F1
-P 4825 3500
-F 0 "U6" H 4825 1511 50  0000 C CNN
-F 1 "ATSAMD21G18A-AUT" H 4825 1420 50  0000 C CNN
-F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 3875 1750 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf" H 4825 4500 50  0001 C CNN
-	1    4825 3500
+L electroniccats:ATSAMD21E18A U?
+U 1 1 5DB2F8CF
+P 6755 3465
+F 0 "U?" H 7120 5319 45  0000 C CNN
+F 1 "ATSAMD21E18A" H 7120 5235 45  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 6785 3615 20  0001 C CNN
+F 3 "https://www.mouser.mx/datasheet/2/268/SAM-D21-Family-Datasheet-DS40001882C-1381353.pdf" H 6755 3465 60  0001 C CNN
+	1    6755 3465
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
